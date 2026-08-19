@@ -178,7 +178,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3888507669314500019, guid: c886cc9569f7e4443925e5f3a280437b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2112196217}
   m_SourcePrefab: {fileID: 100100000, guid: c886cc9569f7e4443925e5f3a280437b, type: 3}
 --- !u!1 &410087039
 GameObject:
@@ -454,6 +457,27 @@ MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 2394978876102528609, guid: ef1210bb561e53344a4ca39017ecb64b, type: 3}
   m_PrefabInstance: {fileID: 8782517849726465197}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2112196210 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3888507669314500019, guid: c886cc9569f7e4443925e5f3a280437b, type: 3}
+  m_PrefabInstance: {fileID: 261632710}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2112196217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2112196210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bcfb8fc891833e42a49c809c4c42a88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ShootBehaviour
+  projectilePool: {fileID: 0}
+  projectileVelocity: 0
+  shootPoint: {fileID: 0}
+  lifetime: 0
 --- !u!1001 &3675230682854036750
 PrefabInstance:
   m_ObjectHideFlags: 0
