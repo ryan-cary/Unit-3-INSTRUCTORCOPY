@@ -621,6 +621,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7853884992560776986, guid: fa3016caa828b634bb70514bb36147f1, type: 3}
+      propertyPath: maximumCameraAngle
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7853884992560776986, guid: fa3016caa828b634bb70514bb36147f1, type: 3}
+      propertyPath: minimumCameraAngle
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7853884992560776986, guid: fa3016caa828b634bb70514bb36147f1, type: 3}
+      propertyPath: cameraVerticalSpeed
+      value: -800
+      objectReference: {fileID: 0}
+    - target: {fileID: 7853884992560776986, guid: fa3016caa828b634bb70514bb36147f1, type: 3}
+      propertyPath: cameraHorizontalSpeed
+      value: 1200
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
