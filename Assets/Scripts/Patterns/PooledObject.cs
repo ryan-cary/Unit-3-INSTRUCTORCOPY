@@ -1,4 +1,3 @@
-﻿using Unity;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -42,7 +41,7 @@ public class PooledObject : MonoBehaviour
 
     public void Recycle()
     {
-        if (pool != null)
+        if(pool != null)
         {
             pool.RestoreObject(this);
         }

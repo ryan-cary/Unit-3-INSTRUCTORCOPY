@@ -2,8 +2,6 @@ using UnityEngine;
 
 public class ShootBehaviour : MonoBehaviour
 {
-    private bool shootInput;
-
     [SerializeField] private ObjectPool projectilePool;
     [SerializeField] private float projectileVelocity;
     [SerializeField] private Transform shootPoint;
@@ -11,21 +9,18 @@ public class ShootBehaviour : MonoBehaviour
     [SerializeField] private float lifetime;
 
     new private Rigidbody rigidbody;
+    private bool shootInput;
 
-    void Start()
-    {
-        rigidbody = GetComponent<Rigidbody>();
-    }
+    private void Start()
+    { rigidbody = GetComponent<Rigidbody>(); }
 
-    void Update()
+    private void Update()
     {
         if(shootInput)
-        {
-            Shoot();
-        }
+        { Shoot(); }
     }
 
-    void Shoot()
+    private void Shoot()
     {
         PooledObject projectile = projectilePool.GetPooledObject();
         if (projectile == null)
@@ -40,13 +35,12 @@ public class ShootBehaviour : MonoBehaviour
 
         Vector3 force = projectile.transform.forward * projectileVelocity;
 
-        if (rigidbody != null)
+        if(rigidbody != null)
         {
             force += rigidbody.linearVelocity;
         }
 
         projectileBody.AddForce(force, ForceMode.Impulse);
-
         projectilePool.RecyclePooledObject(projectile, lifetime);
     }
 

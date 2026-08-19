@@ -1,10 +1,11 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class ObjectPool : MonoBehaviour
 {
-    public GameObject _objToPool;
+    public PooledObject _objectToPool;
     public int _startSize;
+    public int _poolLimit = 20;
 
     [SerializeField] private List<PooledObject> pooledObjects = new List<PooledObject>();
     [SerializeField] private List<PooledObject> usedObjects = new List<PooledObject>();
@@ -26,7 +27,7 @@ public class ObjectPool : MonoBehaviour
 
     void AddNewObject()
     {
-        _temp = Instantiate(_objToPool, transform).GetComponent<PooledObject>();
+        _temp = Instantiate(_objectToPool, transform).GetComponent<PooledObject>();
         _temp.gameObject.SetActive(false);
         _temp.SetObjectPool(this);
         pooledObjects.Add(_temp);
@@ -34,6 +35,9 @@ public class ObjectPool : MonoBehaviour
 
     public PooledObject GetPooledObject()
     {
+        if (usedObjects.Count >= _poolLimit)
+            return null;
+        
         PooledObject obj;
         if(pooledObjects.Count > 0)
         {
@@ -54,7 +58,7 @@ public class ObjectPool : MonoBehaviour
 
     public void RecyclePooledObject(PooledObject obj, float time=0)
     {
-        if(time==0)
+        if(time == 0)
         {
             obj.Recycle();
         }
