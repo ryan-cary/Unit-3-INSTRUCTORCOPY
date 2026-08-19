@@ -1,19 +1,14 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
-public abstract class PlayerRigidBodyJumpBehaviour : PlayerJumpBehaviour
+public class PlayerRigidbodyJumpBehaviour : PlayerJumpBehaviour
 {
     [SerializeField] private ForceMode forceMode = ForceMode.Impulse;
     new private Rigidbody rigidbody;
 
-    void Start()
+    private void Start()
     { rigidbody = GetComponent<Rigidbody>(); }
 
-    protected virtual void ApplyJump()
-    { }
-
     protected override void Jump()
-    {
-        rigidbody.AddForce(Vector3.up * force, ForceMode.Impulse);
-    }
+    { rigidbody.AddForce(Vector3.up * force, forceMode); }
 }
