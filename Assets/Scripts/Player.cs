@@ -274,11 +274,11 @@ public class Player : MonoBehaviour
     {
         if (rocketInput)
         {
-            GameObject projectileInstance = Instantiate(rocketPrefab);
-            projectileInstance.transform.position = projectileSpawn.position;
-            projectileInstance.transform.rotation = projectileSpawn.rotation;
+            GameObject rocketInstance = Instantiate(rocketPrefab);
+            rocketInstance.transform.position = projectileSpawn.position;
+            rocketInstance.transform.rotation = projectileSpawn.rotation;
 
-            Rigidbody projectileBody = projectileInstance.GetComponent<Rigidbody>();
+            Rigidbody projectileBody = rocketInstance.GetComponent<Rigidbody>();
             if (projectileBody != null)
             {
                 Quaternion cameraRotation = Quaternion.AngleAxis(yRotation, Vector3.right);
@@ -294,7 +294,7 @@ public class Player : MonoBehaviour
                 }
             }
 
-            Destroy(projectileInstance, projectileLifetime);
+            Destroy(rocketInstance, rocketLifetime);
         }
     }
 
