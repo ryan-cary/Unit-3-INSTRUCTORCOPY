@@ -2,20 +2,12 @@ using UnityEngine;
 
 public abstract class PlayerJumpBehaviour : MonoBehaviour
 {
-    private bool isGrounded;
-    protected bool jumpInput;
-
     [SerializeField] protected float force;
 
-    /*
-     * void GetReferences()
-    {
-        rigidbody = GetComponent<Rigidbody>();
-        controller = GetComponent<CharacterController>();
-    }
-    */
+    private bool isGrounded;
+    private bool jumpInput;
 
-    void Update()
+    private void Update()
     {
         ApplyJump();
 
@@ -23,7 +15,7 @@ public abstract class PlayerJumpBehaviour : MonoBehaviour
         { Jump(); }
     }
 
-    protected virtual void ApplyJump() 
+    protected virtual void ApplyJump()
     { }
 
     protected abstract void Jump();

@@ -1,14 +1,14 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
-public abstract class PlayerCharacterControllerJumpBehaviour : PlayerJumpBehaviour
+public class PlayerCharacterControllerJumpBehaviour : PlayerJumpBehaviour
 {
     [SerializeField] private float decay;
     private float jumpModifier;
 
     private CharacterController controller;
 
-    void Start()
+    private void Start()
     { controller = GetComponent<CharacterController>(); }
 
     protected override void ApplyJump()
@@ -26,7 +26,5 @@ public abstract class PlayerCharacterControllerJumpBehaviour : PlayerJumpBehavio
     }
 
     protected override void Jump()
-    {
-        jumpModifier = force;
-    }
+    { jumpModifier = force; }
 }
