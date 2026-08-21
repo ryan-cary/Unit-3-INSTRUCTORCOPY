@@ -12,6 +12,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: CharacterControllerPlayer
       objectReference: {fileID: 0}
+    - target: {fileID: 3501606152944022297, guid: f838c68d676ad70459ac88e34d49d8cb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3501606152944022297, guid: f838c68d676ad70459ac88e34d49d8cb, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 7891870559017876711, guid: f838c68d676ad70459ac88e34d49d8cb, type: 3}
       propertyPath: inputButtons.Array.size
       value: 1
