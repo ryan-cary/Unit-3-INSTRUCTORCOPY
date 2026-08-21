@@ -263,7 +263,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7891870559017876711, guid: f838c68d676ad70459ac88e34d49d8cb, type: 3}
       propertyPath: inputAxes.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7891870559017876711, guid: f838c68d676ad70459ac88e34d49d8cb, type: 3}
       propertyPath: inputButtons.Array.size
@@ -283,7 +283,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7891870559017876711, guid: f838c68d676ad70459ac88e34d49d8cb, type: 3}
       propertyPath: inputAxes.Array.data[3].axisName
-      value: Jump
+      value: Mouse Y
       objectReference: {fileID: 0}
     - target: {fileID: 7891870559017876711, guid: f838c68d676ad70459ac88e34d49d8cb, type: 3}
       propertyPath: inputButtons.Array.data[0].buttonName
@@ -319,7 +319,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7891870559017876711, guid: f838c68d676ad70459ac88e34d49d8cb, type: 3}
       propertyPath: inputAxes.Array.data[3].axisAction.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7891870559017876711, guid: f838c68d676ad70459ac88e34d49d8cb, type: 3}
       propertyPath: inputAxes.Array.data[0].axisAction.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -333,6 +333,10 @@ PrefabInstance:
       propertyPath: inputAxes.Array.data[2].axisAction.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 4809595198322658803}
+    - target: {fileID: 7891870559017876711, guid: f838c68d676ad70459ac88e34d49d8cb, type: 3}
+      propertyPath: inputAxes.Array.data[3].axisAction.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 3997998661642194793}
     - target: {fileID: 7891870559017876711, guid: f838c68d676ad70459ac88e34d49d8cb, type: 3}
       propertyPath: inputAxes.Array.data[1].axisAction.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -359,7 +363,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7891870559017876711, guid: f838c68d676ad70459ac88e34d49d8cb, type: 3}
       propertyPath: inputAxes.Array.data[3].axisAction.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetJumpInput
+      value: SetCameraVerticalInput
       objectReference: {fileID: 0}
     - target: {fileID: 7891870559017876711, guid: f838c68d676ad70459ac88e34d49d8cb, type: 3}
       propertyPath: inputButtons.Array.data[1].buttonAction.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -403,7 +407,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7891870559017876711, guid: f838c68d676ad70459ac88e34d49d8cb, type: 3}
       propertyPath: inputAxes.Array.data[3].axisAction.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: PlayerRigidbodyJumpBehaviour, Assembly-CSharp
+      value: PlayerCameraBehaviour, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7891870559017876711, guid: f838c68d676ad70459ac88e34d49d8cb, type: 3}
       propertyPath: inputAxes.Array.data[3].axisAction.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
@@ -587,6 +591,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerRigidbodyJumpBehaviour
   force: 5
   forceMode: 1
+--- !u!114 &3997998661642194793 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3608873932770773443, guid: f838c68d676ad70459ac88e34d49d8cb, type: 3}
+  m_PrefabInstance: {fileID: 391519740085110442}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3888507669314500019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 768b66e7dc3fcd0478b41d5e0248ba71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerCameraBehaviour
 --- !u!114 &4809595198322658803 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5175173051790248793, guid: f838c68d676ad70459ac88e34d49d8cb, type: 3}

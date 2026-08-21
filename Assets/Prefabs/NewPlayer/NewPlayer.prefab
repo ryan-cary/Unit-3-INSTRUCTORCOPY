@@ -148,6 +148,7 @@ GameObject:
   - component: {fileID: 8398015353242611718}
   - component: {fileID: 7891870559017876711}
   - component: {fileID: 5175173051790248793}
+  - component: {fileID: 3608873932770773443}
   m_Layer: 0
   m_Name: NewPlayer
   m_TagString: Player
@@ -201,6 +202,22 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+  - axisName: Mouse Y
+    axisAction:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 3608873932770773443}
+          m_TargetAssemblyTypeName: PlayerCameraBehaviour, Assembly-CSharp
+          m_MethodName: SetCameraVerticalInput
+          m_Mode: 0
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   inputButtons: []
 --- !u!114 &5175173051790248793
 MonoBehaviour:
@@ -215,6 +232,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerTurnBehaviour
   turnSpeed: 30
+--- !u!114 &3608873932770773443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3501606152944022297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 768b66e7dc3fcd0478b41d5e0248ba71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerCameraBehaviour
+  cameraPivot: {fileID: 371095424743942100}
+  verticalSpeed: -800
+  maximumAngle: 90
+  minimumAngle: -80
 --- !u!1 &3730222239812070466
 GameObject:
   m_ObjectHideFlags: 0
