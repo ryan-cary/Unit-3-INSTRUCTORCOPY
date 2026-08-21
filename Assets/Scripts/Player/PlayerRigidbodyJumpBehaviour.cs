@@ -10,8 +10,5 @@ public class PlayerRigidbodyJumpBehaviour : PlayerJumpBehaviour
     { rigidbody = GetComponent<Rigidbody>(); }
 
     protected override void Jump()
-    {
-        Debug.Log("Pressed Jump!");
-        rigidbody.AddForce(Vector3.up * force, forceMode); 
-    }
+    { rigidbody.AddForce(Vector3.up * force, forceMode); }
 }
