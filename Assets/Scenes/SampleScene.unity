@@ -131,6 +131,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: RigidbodyPlayer
       objectReference: {fileID: 0}
+    - target: {fileID: 7560272004302781005, guid: c886cc9569f7e4443925e5f3a280437b, type: 3}
+      propertyPath: inputAxes.Array.data[4].axisAction.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 450448978}
+    - target: {fileID: 7560272004302781005, guid: c886cc9569f7e4443925e5f3a280437b, type: 3}
+      propertyPath: inputAxes.Array.data[4].axisAction.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 450448979}
     - target: {fileID: 8207048741746570924, guid: c886cc9569f7e4443925e5f3a280437b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.9
@@ -303,6 +311,28 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!114 &450448978 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8097458469736366932, guid: f838c68d676ad70459ac88e34d49d8cb, type: 3}
+  m_PrefabInstance: {fileID: 5569274930410448513}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f595b599e8aba8840a8334b6a53df3fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Interactor
+--- !u!114 &450448979 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5229316560329884467, guid: f838c68d676ad70459ac88e34d49d8cb, type: 3}
+  m_PrefabInstance: {fileID: 5569274930410448513}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae56257ba91817c41906b9d42d6bbed1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GrabBehaviour
 --- !u!1 &527665307
 GameObject:
   m_ObjectHideFlags: 0
@@ -799,6 +829,10 @@ PrefabInstance:
     - target: {fileID: 3501606152944022297, guid: f838c68d676ad70459ac88e34d49d8cb, type: 3}
       propertyPath: m_Name
       value: NewPlayer
+      objectReference: {fileID: 0}
+    - target: {fileID: 3501606152944022297, guid: f838c68d676ad70459ac88e34d49d8cb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8398015353242611718, guid: f838c68d676ad70459ac88e34d49d8cb, type: 3}
       propertyPath: m_LocalPosition.x

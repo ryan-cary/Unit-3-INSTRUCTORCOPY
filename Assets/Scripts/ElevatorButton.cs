@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class ElevatorButton : MonoBehaviour, ISelectable
+public class ElevatorButton : MonoBehaviour, IInteractable
 {
     [SerializeField] Transform elevator;
     [SerializeField] Transform elevatorDestination;
@@ -39,29 +39,8 @@ public class ElevatorButton : MonoBehaviour, ISelectable
         }
     }
 
-    public string GetSelectionText()
+    public void Interact(Interactor interactor)
     {
-        return "";
-    }
 
-    public Transform GetTransform()
-    {
-        return transform;
-    }
-
-    public void OnInteract()
-    {
-        elevatorTurnedOn = !elevatorTurnedOn;
-    }
-
-    public void OnPickup()
-    { }
-
-    public void OnPutDown()
-    { }
-
-    public bool ShouldPickup()
-    {
-        return false;
     }
 }
